@@ -1,36 +1,33 @@
-#Dado un arreglo de enteros, encontrar si se encuentran elementos duplicados
-#Se debe retornar verdadero si almenos un elemento se repite una vez y falso 
-#si todos los elementos son distintos
-#Example 1:
-#Input: [1,2,3,1]
-#Output: true
-#Example 2:
-#Input: [1,2,3,4]
-#Output: false
 import traceback
 
-def solve(numbers):
-    memo = {}
-    
-    for number in numbers:
-        if number in memo:
-            return memo[number]
-        
-        memo[number] = True
+#Iter Factorial
+# def solve(number):
+#     result = 1
+#     current_number = 1
 
-    return False
+#     while current_number <= number:
+#         result = result * current_number
+#         current_number += 1
+    
+#     return result
+
+def factorial(number):
+    if number == 1:
+        return 1
+
+    return number * factorial(number - 1)
 
 # Execute the solution function with test cases and verify that the response is the same as expected
 def main():
-  test_cases = [[1,1,2,3,4,5,6,7,8,9], [1,2,3,4]]
-  expected = [True, False]
+  test_cases = [4, 10, 100]
+  expected = [24, 3628800, 3628800]
 
   for i in range(len(test_cases)):
         solution = None
         try:
             test_case = test_cases[i]
     
-            solution = solve(test_case)
+            solution = factorial(test_case)
           
             assert solution == expected[i]
             print("OK")
@@ -41,4 +38,4 @@ def main():
 
 main()
 
-
+    

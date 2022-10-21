@@ -3,6 +3,17 @@
 #nput: nums = [1,2,3,4,5,6,7], k = 3
 #Output: [5,6,7,1,2,3,4]
 
+
+
+
+
+
+
+
+
+
+
+
 def reverse(array, start, end): #Function to reverse the elements of array from index start to index end
     while start<end:
         print(start, end)
