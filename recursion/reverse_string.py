@@ -1,15 +1,27 @@
+# Invertir el string ingresado utilizando recursividad
+# Input: Hello
+# Output: olleH
+
 import traceback
 
+def recursive():
+    # Casos base
 
-def solve(case):
-    return 1
+    # Algoritmo 
+
+    return 
+
+def solve(string):
+    # Llamada a la funcion recursiva
+
+    # Retorno
+    return 
+
 
 # Execute the solution function with test cases and verify that the response is the same as expected
-
-
 def main():
-    test_cases = [3, 5, 7, 9, 13]
-    expected = [3, 8, 21, 55, 377]
+    test_cases = ["Hi how are you?", "Hello"]
+    expected = ["?uoy era woh iH", "olleH"]
 
     for i in range(len(test_cases)):
         solution = None

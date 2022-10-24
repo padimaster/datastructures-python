@@ -1,15 +1,31 @@
+# Sumar todos los numeros naturales anteriores usando recursividad
+# Input: 10
+# Output: 55
+# Explanation:
+# 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 = 55
+
+
 import traceback
 
+def recursive(number):
+    # Casos base
 
-def solve(case):
-    return 1
+
+    # Algoritmo
+    return 
+
+
+def solve(number):
+    # Llamada a la funcion recursiva
+
+    # Retorno
+    return 
+
 
 # Execute the solution function with test cases and verify that the response is the same as expected
-
-
 def main():
-    test_cases = [3, 5, 7, 9, 13]
-    expected = [3, 8, 21, 55, 377]
+    test_cases = [10, 20, 233, 1525]
+    expected = [55, 210, 27261, 1163575]
 
     for i in range(len(test_cases)):
         solution = None
